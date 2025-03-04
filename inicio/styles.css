@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+header{
+  background-color: #333;
+  background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F_EZ16vWYvHHg%2FS-1hntey50I%2FAAAAAAAAMqs%2F0eEVjeGEoSY%2Fs1600%2Fwww.AlmacendeImagenes.com-Headers-5.jpg&f=1&nofb=1&ipt=84205580ce68e5a4430542f2be057f0836e675a342f656bda3b2bf8a48705847&ipo=images) no-repeat center center/cover;
+  height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+section{
+  padding: 20px 0;
+  min-height: 100px;
+  margin: auto;
+}
+
+section h1{
+  font-size: 44px;
+}
+
+.content{
+  text-align: center;
+}
+
+.content p{
+  font-size: 60px;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+.content a{
+  color: pink;
+  text-decoration: none;
+  background: greenyellow;
+  padding: 4px 20px;
+  border-radius: 30px;
+  font-size: 30px;
+  margin: 10px;
+}

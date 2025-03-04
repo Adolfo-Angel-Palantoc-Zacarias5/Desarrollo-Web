@@ -1,0 +1,146 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #1a1a1a, #333); /* Fondo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Estilo del formulario */
+.form {
+  background: rgba(20, 20, 20, 0.9); /* Fondo semi-transparente oscuro */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  width: 350px;
+}
+
+/* Título y párrafo */
+.form_title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.form_paragraph {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #bbbbbb;
+}
+
+.form_link {
+  color: #ff5733;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form_link:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor de los inputs */
+.form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form_group {
+  position: relative;
+}
+
+/* Estilos de los inputs */
+.form_input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #666;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.form_input:focus {
+  border-bottom: 2px solid #ff5733;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Etiquetas flotantes */
+.form_label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #999;
+  transition: all 0.3s ease;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+  top: 0;
+  font-size: 0.8rem;
+  color: #ff5733;
+}
+
+/* Línea decorativa debajo de los inputs */
+.form_line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #444;
+  margin-top: 5px;
+  transition: background 0.3s ease;
+}
+
+.form_input:focus ~ .form_line {
+  background: #ff5733;
+}
+
+/* Botón de enviar */
+.form_submit {
+  background: #ff5733;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form_submit:hover {
+  background: #e04e2a;
+  transform: scale(1.05);
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+

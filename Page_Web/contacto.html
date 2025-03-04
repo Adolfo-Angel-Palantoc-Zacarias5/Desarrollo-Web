@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/contacto.css">
+</head>
+<body>
+  <nav>
+    <h1>Funable Styles</h1>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+  <header class="center">
+    <form action="https://formsubmit.co/okami7mil@gmail.com" method="POST">
+      <h2>Contacto</h2>
+      <div class="input-group">
+        <label for="name">Nombre</label>
+        <input type="text" placeholder="Nombre" name="name" id="name">
+        <label for="phone">Telefono</label>
+        <input type="text" placeholder="Telefono" name="phone" id="phone">
+        <label for="email">E-mail</label>
+        <input type="email" placeholder="Email" name="email" id="email">
+        <label for="message">Mensaje</label>
+        <textarea name="message" id="messsage" cols="30" rows="5" placeholder="Mensaje"></textarea>
+        <div class="form-txt">
+          <a href="#">Politica De pivacidad</a>
+          <a href="#">Terminos y condiciones</a>
+        </div>
+        <input type="submit" value="Enviar" class="btn">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+        <input type="hidden" name="_captcha" value="false">
+      </div>
+    </form>
+  </header>
+</body>
+</html>
